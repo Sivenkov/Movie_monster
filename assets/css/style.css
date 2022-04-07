@@ -55,6 +55,7 @@ ul li {
 }
 
 
+
 .header {
 	background-color: darkslateblue;
 	height: 177px;
@@ -245,6 +246,11 @@ hr {
 }
 
 
+
+
+
+
+
 .reviews {
 	margin-bottom: 4%;
 	font-size: 0.9em;
@@ -263,6 +269,9 @@ hr {
 	padding-bottom: 2%;
 	padding-left: 2%;
 }
+
+
+
 
 
 
@@ -341,6 +350,30 @@ hr {
 
 
 
+
+table {
+	width: 100%;
+	border: solid 1px #f4f4f4;
+}
+
+td {
+	padding: 2%;
+	border: solid 1px #f4f4f4;
+}
+
+td img {
+	width: 60px;
+	vertical-align: middle;
+}
+
+.center {
+	text-align: center;
+}
+
+.rating {
+	font-weight: bold;
+}
+
 .footer {
 	width: 100%;
 	height: 100px;
@@ -365,5 +398,68 @@ hr {
 
 .footer p {
 	padding: 0 0 10px 0;
+
+}
+
+
+
+/* CSS Mobile */
+
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px) {
+
+	.header {
+		background-color: #257965;
+		min-width: 100%;
+		height: 20%;
+		text-align: center;
+	}
+
+	.logo {
+		width: 100%;
+	}
+
+	.site_content {
+		width: 100%;
+	}
+
+	.menubar {
+		width: 100%;
+		height: 100%;
+		padding-bottom: 7px;
+	}
+
+	.site_content {
+		width: 100%;
+		text-align: center;
+	}
+
+	.sidebar_container {
+		display: none;
+	}
+
+	.footer {
+		display: none;
+	}
+
+	ul.menu {
+		float: none;
+	}
+
+	ul.menu li {
+		margin: 0;
+		padding: 0;
+		float: none;
+	}
+
+	.logo h1 {
+		font: normal 235% 'century gothic', arial, sans-serif;
+	}
+
+	.logo h2 {
+		font: normal 100% 'century gothic', arial, sans-serif;
+		color: white;
+	}
 
 }
